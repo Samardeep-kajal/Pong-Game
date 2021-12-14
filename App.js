@@ -1,4 +1,4 @@
-import Ball from "./ball";
+import Ball from "./ball.js";
 
 const ball = new Ball(document.getElementById("ball"));
 
@@ -7,7 +7,6 @@ function update(time) {
   if (lastTime != null) {
     const delta = time - lastTime;
     ball.update(delta);
-    console.log(delta);
   }
 
   lastTime = time;
